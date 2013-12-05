@@ -1,0 +1,235 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/oink"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+   <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Module Code" />
+
+        <EditText
+            android:id="@+id/modcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" 
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz012345789!'%\()*.?+-/;:=>¡¿_-@ "/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Module Name" />
+
+        <EditText
+            android:id="@+id/modname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" 
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz012345789!'%\()*.?+-/;:=>¡¿_-@ "/>
+
+       <RadioGroup
+           android:id="@+id/radioGroup1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Lecture" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Practical" >
+                </RadioButton>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Day of the Week" />
+
+         <RadioGroup
+             android:id="@+id/radioGroup2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="vertical" >
+            
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Monday" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radio4"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thuesday" >
+                </RadioButton>
+                
+                <RadioButton
+                    android:id="@+id/radio5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wednesday" >
+                </RadioButton>
+
+                        
+                <RadioButton
+                    android:id="@+id/radio6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thursday" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radio7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Friday" >
+                </RadioButton>
+                
+                <RadioButton
+                    android:id="@+id/radio8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saturday" >
+                </RadioButton>
+        
+            <RadioButton
+                    android:id="@+id/radio9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sunday (that's just sad)" >
+                </RadioButton>
+        </RadioGroup>
+        <TextView
+            android:id="@+id/StartTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Time" />
+
+        <TimePicker
+            android:id="@+id/strtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/EndTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Time" />
+
+        <TimePicker
+            android:id="@+id/endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+         
+         <TextView
+            android:id="@+id/loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location" />
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" 
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz012345789!'%\()*.?+-/;:=>¡¿_-@ "/>
+
+        <TextView
+            android:id="@+id/comm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Additional Info" />
+
+        <EditText
+            android:id="@+id/comments"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_weight="0.34"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz012345789!'%\()*.?+-/;:=>¡¿_-@ " />
+        <CheckBox 
+            android:id="@+id/notif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Notification"/>
+        <TextView
+            android:id="@+id/nottime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minutes before notified" />
+        <RadioGroup
+           android:id="@+id/notiftime"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/time0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/time5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5" >
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/time10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="10" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/time15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15" >
+                </RadioButton>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="submit"
+            android:text="Submit" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="back"
+            android:text="Back" />
+    </TableLayout>
+
+</ScrollView>
